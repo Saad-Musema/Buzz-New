@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",   
+        "env": {
+          "EXPO_PUBLIC_API_URL" : "https://addisbuzz.api.buzzaddis.com/"
+        }
+        
+      }
+      
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease",
+        "env": {
+          "EXPO_PUBLIC_API_URL" : "https://addisbuzz.api.buzzaddis.com/"
+        }
+      }
+    },
+    "preview3": {
+      "developmentClient": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL" : "https://addisbuzz.api.buzzaddis.com/"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+      "EXPO_PUBLIC_API_URL" : "https://addisbuzz.api.buzzaddis.com/"
+      }
+    }
+  }
+}

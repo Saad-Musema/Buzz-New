@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Buzz addis",
+    "slug": "gursha-gab",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/iconss.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true 
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/iconss.png",
+        "backgroundColor": "#43c67d"
+      },
+      "package": "com.bamose.gurshagab",
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD50R6ssBgaUFXfEgdzCKMUNJSx2gszY-U"
+        } 
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      ["expo-build-properties", {
+        "android": {
+          "usesCleartextTraffic": true,
+          "enableProguardInReleaseBuilds": true,
+          "enableShrinkResourcesInReleaseBuilds": true
+
+        }
+      }]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "58b145f5-fe02-4c6f-b3c3-5a8258a7eebf"
+      }
+    },
+    "owner": "bamose"
+  }
+}
